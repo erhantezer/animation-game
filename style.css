@@ -1,0 +1,15 @@
+/****** GAME ANIMATION ******/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-image: linear-gradient(0deg, #2b5876 0%, #4e4376 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
