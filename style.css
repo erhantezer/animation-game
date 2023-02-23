@@ -21,6 +21,7 @@ body {
     height: 700px;
     position: relative;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    overflow-x: hidden;
 }
 .ground {
     height: 150px;
@@ -29,9 +30,31 @@ body {
     bottom: 0;
     left: 0;
     background-repeat: repeat-x;
-    /* animation: right 5s linear infinite; */
+    animation: right 5s linear infinite;
 }
 
 .car {
+    position: absolute;
+    bottom: 55px;
+    left: 30%;
+    animation: pop-up 0.8s linear infinite;
+}
+
+@keyframes right {
+    100% {
+        transform: translate(-2000px);
+    }
     
+}
+
+@keyframes pop-up {
+    0%{
+        transform: translateY(-1px);
+    }
+    50%{
+        transform: translateY(px);
+    }
+    100%{
+        transform: translateY(1px);
+    }
 }
